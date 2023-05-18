@@ -1,7 +1,9 @@
 <div class="body">
-    <h1> <b>User group: </b><span> Healthy lifestyle</span></h1>
+    <h1><b>User group:</b><span>{{groupName}}</span></h1>
     <div class="edit-body">
-        <input type="text" placeholder="Write new group name">
-        <button class="network">Edit</button>
+      <input type="text" placeholder="Write new group name" #groupInput>
+      <button class="network" (click)="changeGroup(groupInput.value)">Edit</button>
     </div>
-</div>
+  </div>
+  
+
